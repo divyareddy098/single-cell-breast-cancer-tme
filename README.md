@@ -44,10 +44,6 @@ single-cell-breast-cancer-tme/
 │   ├── 4_differential_expression.R  
 │   ├── 5_pathway_enrichment.R  
 │  
-│── results/  
-│   ├── figures/  
-│   ├── tables/  
-│  
 │── README.md  
 │── environment.yml  
 
