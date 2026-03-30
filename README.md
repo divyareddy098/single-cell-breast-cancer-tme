@@ -1,115 +1,141 @@
 # 🧬 Single-Cell RNA-seq Analysis of Breast Cancer Tumor Microenvironment (Seurat)
 
-## 🎯 Project Goal
-
-Performed single-cell transcriptomic analysis to identify and characterize tumor and immune cell populations within the breast cancer tumor microenvironment.
-
----
-
-## 📌 Overview
-
-This project analyzes single-cell RNA-seq data from a public breast cancer dataset to explore cellular heterogeneity within the tumor microenvironment.
-
-The workflow includes:
-
-* quality control
-* normalization
-* dimensionality reduction
-* clustering
-* cell type annotation
+## Project Goal
+Performed single-cell transcriptomic analysis to identify and characterize tumor and immune cell populations within the breast cancer tumor microenvironment (TME), capturing cellular heterogeneity and functional states.
 
 ---
 
-## 🚀 Key Features
-
-* Single-cell RNA-seq analysis using **Seurat**
-* Identification of distinct tumor and immune cell populations
-* Dimensionality reduction using **PCA and UMAP**
-* Marker gene analysis for cell type identification
-* Visualization of cellular heterogeneity
+## Overview
+This project implements an end-to-end single-cell RNA-seq (scRNA-seq) analysis workflow using a public breast cancer dataset. The pipeline focuses on identifying distinct cellular populations and understanding tumor microenvironment composition.
 
 ---
 
-## 📂 Project Structure
+## Pipeline Overview
 
-```id="k1v9p1"
-single-cell-breast-cancer-tme/
-│── notebooks/
-│── scripts/
-│── data/
-│── results/
-│── figures/
-```
+1. Quality Control & Preprocessing  
+2. Normalization & Feature Scaling  
+3. Data Integration & Batch Correction  
+4. Dimensionality Reduction (PCA, UMAP)  
+5. Clustering & Cell Population Identification  
+6. Cell-Type Annotation (cluster-based placeholder)  
+7. Differential Expression Analysis  
+8. Pathway Enrichment Analysis (GO)  
 
 ---
 
-## ⚙️ Workflow
+## Key Features
+
+- scRNA-seq preprocessing, normalization, and batch correction  
+- Integration of high-dimensional transcriptomic data  
+- Identification of tumor and immune cell populations  
+- Differential expression analysis across cell populations  
+- Functional interpretation using pathway enrichment (clusterProfiler)  
+- Reproducible and modular analysis pipeline  
+
+---
+
+## Project Structure
+
+single-cell-breast-cancer-tme/  
+│── scripts/  
+│   ├── 1_qc_preprocessing.R  
+│   ├── 2_integration_clustering_umap.R  
+│   ├── 3_celltype_annotation_markers.R  
+│   ├── 4_differential_expression.R  
+│   ├── 5_pathway_enrichment.R  
+│  
+│── results/  
+│   ├── figures/  
+│   ├── tables/  
+│  
+│── README.md  
+│── environment.yml  
+
+---
+
+## Workflow Details
 
 ### 1️⃣ Quality Control
-
-* Filter low-quality cells
-* Remove cells with high mitochondrial gene expression
+- Filter low-quality cells  
+- Remove cells with high mitochondrial gene expression  
 
 ### 2️⃣ Normalization
+- Normalize gene expression values  
+- Scale features for downstream analysis  
 
-* Normalize gene expression data
-* Scale features for downstream analysis
+### 3️⃣ Integration & Batch Correction
+- Integrate datasets across batches (Seurat integration workflow)  
+- Correct batch effects for consistent clustering  
 
-### 3️⃣ Dimensionality Reduction
+### 4️⃣ Dimensionality Reduction
+- Principal Component Analysis (PCA)  
+- UMAP for visualization of cellular structure  
 
-* Perform PCA
-* Visualize clusters using UMAP
+### 5️⃣ Clustering
+- Graph-based clustering to identify cell populations  
+- Detection of tumor and immune cell clusters  
 
-### 4️⃣ Clustering
+### 6️⃣ Cell-Type Annotation
+- Cluster-based placeholder annotation (to be refined with marker genes)  
+- Supports identification of T cells, macrophages, tumor cells, etc.  
 
-* Identify distinct cell clusters
-* Detect tumor and immune populations
+### 7️⃣ Differential Expression
+- Identify marker genes between clusters  
+- Compare transcriptional differences across cell populations  
 
-### 5️⃣ Cell Type Annotation
-
-* Use marker genes to label clusters
-* Identify major cell populations (e.g., T cells, macrophages, tumor cells)
-
----
-
-## 📈 Example Output
-
-* UMAP plot showing cell clusters
-* Cluster marker genes
-* Cell type annotation plots
-* Expression heatmaps
-
----
-
-## 🛠️ Tools & Technologies
-
-* R (Seurat, ggplot2)
-* Python (optional for preprocessing)
+### 8️⃣ Pathway Enrichment
+- Gene Ontology (GO) enrichment using clusterProfiler  
+- Functional interpretation of biological processes  
 
 ---
 
-## 💡 Skills Demonstrated
+## 📈 Example Outputs
 
-* Single-cell RNA-seq analysis
-* Clustering and dimensionality reduction
-* Cell type annotation
-* Data visualization
-* Transcriptomic analysis
-
----
-
-## 🎯 Impact
-
-This project demonstrates analysis of tumor microenvironment heterogeneity and reflects workflows used in:
-
-* cancer research
-* immuno-oncology
-* precision medicine
+- UMAP visualization of cell clusters  
+- Cluster marker gene tables  
+- Differential expression results  
+- GO pathway enrichment plots  
 
 ---
 
-## 👩‍💻 Author
+## ⚙️ Environment Setup
 
-Divya Reddy
-MS Bioinformatics | Georgia Tech
+conda env create -f environment.yml  
+conda activate scrna-seq-env  
 
+---
+
+## Tools & Technologies
+
+- R: Seurat, dplyr, ggplot2  
+- Bioinformatics: clusterProfiler, org.Hs.eg.db  
+- Workflow: Reproducible pipeline with modular scripts  
+
+---
+
+## Skills Demonstrated
+
+- Single-cell RNA-seq analysis  
+- High-dimensional data integration and batch correction  
+- Clustering and cell-type identification  
+- Differential gene expression analysis  
+- Pathway enrichment and biological interpretation  
+- Reproducible computational workflows  
+
+---
+
+## Impact
+
+This project reflects real-world bioinformatics workflows used in:
+
+- Cancer genomics research  
+- Tumor microenvironment analysis  
+- Immuno-oncology  
+- Precision medicine  
+
+---
+
+## Author
+
+Divya Reddy  
+MS Bioinformatics, Georgia Institute of Technology  
