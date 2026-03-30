@@ -111,7 +111,7 @@ conda activate scrna-seq-env
 
 ## 📊 Visualization (Work in Progress)
 
-Example outputs (UMAP plots, differential expression results, and pathway enrichment visualizations) will be added upon completion of full analysis.
+Outputs (UMAP plots, differential expression results, and pathway enrichment visualizations) will be added upon completion of full analysis.
 
 Current repository focuses on building a reproducible scRNA-seq analysis pipeline.
 
