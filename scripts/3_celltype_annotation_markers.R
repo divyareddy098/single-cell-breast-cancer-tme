@@ -1,4 +1,3 @@
-# File: scripts/03_celltype_annotation_markers.R
 # Purpose: Identify cluster markers, assign cell types, and save annotated object
 
 suppressPackageStartupMessages({
