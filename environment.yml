@@ -1,0 +1,11 @@
+name: scrna-seq-env
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base
+  - r-seurat
+  - r-dplyr
+  - r-ggplot2
+  - bioconductor-clusterprofiler
+  - bioconductor-org.hs.eg.db
