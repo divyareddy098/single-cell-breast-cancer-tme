@@ -1,5 +1,3 @@
-# File: scripts/01_qc_preprocessing.R
-# Project: Single-Cell RNA-seq Analysis of Breast Cancer Tumor Microenvironment
 # Purpose: Load data, compute QC metrics, filter cells, normalize, and save processed object
 
 suppressPackageStartupMessages({
