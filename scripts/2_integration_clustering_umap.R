@@ -1,4 +1,3 @@
-# File: scripts/2_integration_clustering_umap.R
 # Purpose: Run integration-ready preprocessing, PCA, clustering, and UMAP
 
 suppressPackageStartupMessages({
