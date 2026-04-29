@@ -1,0 +1,30 @@
+Cell_Type_Minor,Cell_Count
+T cells CD4+,19231
+T cells CD8+,11487
+Cancer LumA SC,7742
+Macrophage,5929
+Cancer Cycling,5359
+Endothelial ACKR1,4611
+Cancer Basal SC,4312
+Cancer Her2 SC,3708
+Plasmablasts,3524
+PVL Differentiated,3487
+CAFs myCAF-like,3420
+Cancer LumB SC,3368
+CAFs MSC iCAF-like,3153
+B cells Memory,2581
+Monocyte,2328
+Luminal Progenitors,1992
+PVL Immature,1886
+NK cells,1846
+Endothelial CXCL12,1644
+Cycling T-cells,1528
+Mature Luminal,1265
+Endothelial RGS5,1147
+NKT cells,1122
+Myoepithelial,1098
+DCs,955
+B cells Naive,625
+Cycling_Myeloid,463
+Endothelial Lymphatic LYVE1,203
+Cycling PVL,50

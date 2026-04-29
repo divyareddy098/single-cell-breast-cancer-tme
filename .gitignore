@@ -1,0 +1,14 @@
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+*.h5ad
+*.loom
+*.mtx
+*.gz
+*.zip
+
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/

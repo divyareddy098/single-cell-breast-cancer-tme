@@ -1,11 +1,17 @@
-name: scrna-seq-env
+name: scRNA-tme
 channels:
   - conda-forge
   - bioconda
 dependencies:
-  - r-base
-  - r-seurat
-  - r-dplyr
-  - r-ggplot2
-  - bioconductor-clusterprofiler
-  - bioconductor-org.hs.eg.db
+  - python=3.10
+  - scanpy
+  - anndata
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - leidenalg
+  - igraph
+  - louvain
+  - pip
